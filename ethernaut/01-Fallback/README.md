@@ -6,6 +6,7 @@ Objective:
 - you reduce its balance to 0
 ---
 
+## 1. Check how `owner` is set
 So first off I want to look at how the `owner` is set, and if there is any way for me to set it to myself. 
 
 
@@ -24,7 +25,7 @@ function contribute() public payable {
     if(contributions[msg.sender] > contributions[owner]) {
       owner = msg.sender;
     }
-  }
+}
 ```
 And at last in the `recive()`
 ```solidity
@@ -33,5 +34,30 @@ receive() external payable {
     owner = msg.sender;
   }
 ```
+
+## 2. What conditions needs to be met for editing `owner`
+
+When looking more close on the `contribute()` function, we can see that the conditions that needs to be met is inside of the `require` and `if` condition
+
+Here we can note down that the `msg.value` needs to be lesser than 0.001 ether
+```solidity
+require(msg.value < 0.001 ether);
+```
+The `if` condition is true if the `contributions` of the `msg.sender` is **greater** than the `contributions` of the `owner`. 
+```solidity
+if(contributions[msg.sender] > contributions[owner])
+```
+
+`contributions[msg.sender]` was definded in the `constructor()` to 1000 eth
+```solidity
+constructor() {
+    owner = msg.sender;
+    contributions[msg.sender] = 1000 * (1 ether);
+}
+```
+
+So if we send less than a 0.001 ether, our transaction should go through
+
+## 3. Claming ownership
 
 
