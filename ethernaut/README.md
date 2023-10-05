@@ -6,7 +6,7 @@ This repo will contain the contract code for the challenge, and a writeup on the
 
 Challenges:
 - [x] Hello Ethernaut
-- [] Fallback
+- [x] Fallback
 - [] Fallout
 - [] Coin Flip
 - [] Telephone
