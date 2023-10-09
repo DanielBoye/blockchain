@@ -60,4 +60,15 @@ So if we send less than a 0.001 ether, our transaction should go through
 
 ## 3. Claming ownership
 
+To claim ownership of the contract we need to send less than 1000 eth but more than 0.001 eth to the `contribute()` function to contribute some eth. 
+
+From there the `contributions[msg.sender] += msg.value;` is set, so we can then call the `receive()` with sendings some wei to finaly be able to set ourselves to `owner = msg.sender;`!
+
+## 4. Withdraw the money
+
+To withdraw the money, we call `withdraw()`
+
+## Solve the challenge in Remix
+
+First off get the 
 
