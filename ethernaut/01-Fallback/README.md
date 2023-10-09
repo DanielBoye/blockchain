@@ -95,4 +95,29 @@ In the `Deployed Contracts` the `Fallback` contract should be connected to the s
 
 ## Calling the functions
 
+We now know *what* functions to call, and in which *order* too
+
+1. `contribute()` with 1 wei **transact (payable)**
+2. `receive()` with 1 wei **transact (payable)** 
+3. `withdraw` **transact (not payable)**
+4. `owner` **call** 
+
+###  1. `contribute()`
+
+First I am m calling the `owner` just to check that I am not set to the owner 
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/aeb384d7-d110-41b3-8301-8d485dd94782" width="400">
+
+Perfect. Now lets call `contribute()` with 1 wei.
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/0e826139-b861-4368-a8df-27f85bf6e295" width="300">
+
+Click the red contribute button 
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/de069fe0-ff5b-4109-bc36-f73efa11911c" width="300">
+
+And confirm the transaction with Metamask
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/fc75422d-d3d3-4088-bed9-56b11d5ed8b3" width="200">
+
 
