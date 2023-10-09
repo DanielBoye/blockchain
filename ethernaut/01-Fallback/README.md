@@ -99,8 +99,9 @@ We now know *what* functions to call, and in which *order* too
 
 1. `contribute()` with 1 wei **transact (payable)**
 2. `receive()` with 1 wei **transact (payable)** 
-3. `withdraw` **transact (not payable)**
-4. `owner` **call** 
+3. `owner` **call** 
+4. `withdraw` **transact (not payable)**
+
 
 ###  1. `contribute()`
 
@@ -120,4 +121,51 @@ And confirm the transaction with Metamask
 
 <img src="https://github.com/DanielBoye/blockchain/assets/83395536/fc75422d-d3d3-4088-bed9-56b11d5ed8b3" width="200">
 
+### 2. `receive()`
 
+To call the `receive()` function inside of Remix we need to call it as a [**Low level interactions**](https://docs.soliditylang.org/en/v0.6.2/contracts.html#receive-ether-function)
+
+Lets send 1 wei
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/0e826139-b861-4368-a8df-27f85bf6e295" width="300">
+
+And click the yellow transparent Transact button
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/427febf5-2dde-4cd2-9029-f1185cc5d65c" width="350">
+
+And confirm the transaction in Metamask
+
+
+### 3. `owner`
+
+Lets check if we are set to the `owner` now
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/0f6f24d5-b445-4ecb-b013-4b04f4cb6c7b" width="300">
+
+Oh yeah 😎
+
+Let's withdraw the money now
+
+### 4. `withdraw()`
+
+Call `withdraw()`
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/12590bd4-676a-4932-9b36-8e3434efbad5" width="300">
+
+And check if the contract balance is 0.
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/e9a24ec9-7710-475b-98d4-df4b28c01a28" width="300">
+
+Boom!
+
+## Submitting the instance
+
+Now go back to ethernaut and click **Submit Instance**
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/fee3d395-8810-459e-b203-c741ec15098f" width="400">
+
+And confirm the transaction with Metamask
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/edf765af-292a-459e-88e6-8041162b1b75" width="200">
+
+Lets go to the next one
