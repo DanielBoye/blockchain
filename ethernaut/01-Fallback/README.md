@@ -85,11 +85,14 @@ Make sure your environment is set to `Injected Provider - Metamask` with your Se
 
 <img src="https://github.com/DanielBoye/blockchain/assets/83395536/866fb436-3f98-4238-8834-1d53cd9d6245" width="400">
 
-Now deploy it at the adress of the `contract.address` that you got from ethernaut
+Now deploy it at the address of the `contract.address` that you got from ethernaut
 
 <img src="https://github.com/DanielBoye/blockchain/assets/83395536/89593273-87df-407f-aab8-b139d45a8098" width="450">
 
+In the `Deployed Contracts` the `Fallback` contract should be connected to the smart contract and you should see something like this. 
 
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/b9b19206-5921-48d6-bc7a-7508e62844c8" width="300">
 
+## Calling the functions
 
 
