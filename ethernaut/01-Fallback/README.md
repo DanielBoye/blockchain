@@ -105,9 +105,9 @@ We now know *what* functions to call, and in which *order* too
 
 ###  1. `contribute()`
 
-First I am m calling the `owner` just to check that I am not set to the owner 
+First I am calling the `owner` just to check that I am not set to the owner 
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/aeb384d7-d110-41b3-8301-8d485dd94782" width="400">
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/aeb384d7-d110-41b3-8301-8d485dd94782" width="300">
 
 Perfect. Now lets call `contribute()` with 1 wei.
 
@@ -131,7 +131,7 @@ Lets send 1 wei
 
 And click the yellow transparent Transact button
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/427febf5-2dde-4cd2-9029-f1185cc5d65c" width="350">
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/427febf5-2dde-4cd2-9029-f1185cc5d65c" width="250">
 
 And confirm the transaction in Metamask
 
@@ -150,11 +150,11 @@ Let's withdraw the money now
 
 Call `withdraw()`
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/12590bd4-676a-4932-9b36-8e3434efbad5" width="300">
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/12590bd4-676a-4932-9b36-8e3434efbad5" width="100">
 
 And check if the contract balance is 0.
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/e9a24ec9-7710-475b-98d4-df4b28c01a28" width="300">
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/e9a24ec9-7710-475b-98d4-df4b28c01a28" width="100">
 
 Boom!
 
@@ -162,10 +162,8 @@ Boom!
 
 Now go back to ethernaut and click **Submit Instance**
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/fee3d395-8810-459e-b203-c741ec15098f" width="400">
-
 And confirm the transaction with Metamask
 
-<img src="https://github.com/DanielBoye/blockchain/assets/83395536/edf765af-292a-459e-88e6-8041162b1b75" width="200">
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/edf765af-292a-459e-88e6-8041162b1b75" width="500">
 
-Lets go to the next one
+Let's go to the next one
