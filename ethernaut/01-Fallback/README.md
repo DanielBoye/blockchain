@@ -37,9 +37,9 @@ receive() external payable {
 
 ## 2. What conditions needs to be met for editing `owner`
 
-When looking more close on the `contribute()` function, we can see that the conditions that needs to be met is inside of the `require` and `if` condition
+When looking more closely on the `contribute()` function, we can see that the conditions that need to be met are inside of the `require` and `if` condition
 
-Here we can note down that the `msg.value` needs to be lesser than 0.001 ether
+Here we can note down that the `msg.value` needs to be less than 0.001 ether
 ```solidity
 require(msg.value < 0.001 ether);
 ```
@@ -48,7 +48,7 @@ The `if` condition is true if the `contributions` of the `msg.sender` is **great
 if(contributions[msg.sender] > contributions[owner])
 ```
 
-`contributions[msg.sender]` was definded in the `constructor()` to 1000 eth
+`contributions[msg.sender]` was defined in the `constructor()` to 1000 eth
 ```solidity
 constructor() {
     owner = msg.sender;
@@ -62,13 +62,34 @@ So if we send less than a 0.001 ether, our transaction should go through
 
 To claim ownership of the contract we need to send less than 1000 eth but more than 0.001 eth to the `contribute()` function to contribute some eth. 
 
-From there the `contributions[msg.sender] += msg.value;` is set, so we can then call the `receive()` with sendings some wei to finaly be able to set ourselves to `owner = msg.sender;`!
+From there the `contributions[msg.sender] += msg.value;` is set, so we can then call the `receive()` with sendings some wei to finally be able to set ourselves to `owner = msg.sender;`!
 
 ## 4. Withdraw the money
 
 To withdraw the money, we call `withdraw()`
 
-## Solve the challenge in Remix
+# My solution in Remix
 
-First off get the 
+## Setup
+First off we need to get the contract address from ethernaut. We do this with the `contract.address`
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/adb53f3a-7bda-40ee-bb22-ed6a9008f2b4" width="400">
+
+Now copy the contract code and compile it in Remix.
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/9fa1baf8-483d-4e44-a1e8-44a3105c62a6" width="300">
+
+### Connect to the smart contract
+
+Make sure your environment is set to `Injected Provider - Metamask` with your Sepholia wallet
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/866fb436-3f98-4238-8834-1d53cd9d6245" width="400">
+
+Now deploy it at the adress of the `contract.address` that you got from ethernaut
+
+<img src="https://github.com/DanielBoye/blockchain/assets/83395536/89593273-87df-407f-aab8-b139d45a8098" width="450">
+
+
+
+
 
