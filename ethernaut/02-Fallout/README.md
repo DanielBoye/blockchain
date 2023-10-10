@@ -2,7 +2,7 @@
 
 --- 
 Objective: 
-Claim ownership of the contract below to complete this level.
+- Claim ownership of the contract below to complete this level.
 ---
 
 ## 1. Check how `owner` is set
