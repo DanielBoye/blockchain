@@ -71,6 +71,9 @@ To withdraw the money, we call `withdraw()`
 # My solution in Remix
 
 ## Setup
+
+*this step goes for all setups on Remix, and does not match every challenge*
+
 First off we need to get the contract address from ethernaut. We do this with the `contract.address`
 
 <img src="https://github.com/DanielBoye/blockchain/assets/83395536/adb53f3a-7bda-40ee-bb22-ed6a9008f2b4" width="400">
