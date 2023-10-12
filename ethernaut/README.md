@@ -4,15 +4,17 @@ All my solutions and smart contract code for pwning the challenges on [Ethernaut
 
 This repo will contain the contract code for the challenge, and a writeup on the challenge.
 
+Not all will contain completed writeups
+
 Challenges:
 - [x] Hello Ethernaut
 - [x] Fallback
-- [ ] Fallout
-- [ ] Coin Flip
-- [ ] Telephone
-- [ ] Token
-- [ ] Delegation
-- [ ] Force 
+- [x] Fallout
+- [x] Coin Flip
+- [x] Telephone
+- [x] Token
+- [x] Delegation
+- [x] Force 
 - [ ] Vault
 - [ ] King
 - [ ] Re-entrancy
