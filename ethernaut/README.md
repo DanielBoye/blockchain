@@ -15,7 +15,7 @@ Challenges:
 - [x] Token
 - [x] Delegation
 - [x] Force 
-- [ ] Vault
+- [x] Vault
 - [ ] King
 - [ ] Re-entrancy
 - [ ] Elevator
