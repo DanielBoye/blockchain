@@ -17,13 +17,13 @@ Challenges:
 - [x] Delegation
 - [x] Force 
 - [x] Vault
-- [ ] King
-- [ ] Re-entrancy
-- [ ] Elevator
-- [ ] Privacy
-- [ ] Gatekeeper One
-- [ ] Gatekeeper Two
-- [ ] Naught Coin
+- [x] King
+- [x] Re-entrancy
+- [x] Elevator
+- [x] Privacy
+- [x] Gatekeeper One
+- [x] Gatekeeper Two
+- [x] Naught Coin
 - [ ] Preservation
 - [ ] Recovery
 - [ ] MagicNumber
