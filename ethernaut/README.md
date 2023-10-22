@@ -4,7 +4,8 @@ All my solutions and smart contract code for pwning the challenges on [Ethernaut
 
 This repo will contain the contract code for the challenge, and a writeup on the challenge.
 
-Not all will contain completed writeups
+Not all will contain completed writeups, but rather notes
+The writeups will come soon...
 
 Challenges:
 - [x] Hello Ethernaut
