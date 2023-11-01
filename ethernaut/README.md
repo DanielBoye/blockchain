@@ -24,7 +24,7 @@ Challenges:
 - [x] Gatekeeper One
 - [x] Gatekeeper Two
 - [x] Naught Coin
-- [ ] Preservation
+- [x] Preservation
 - [ ] Recovery
 - [ ] MagicNumber
 - [ ] Alien Codex
