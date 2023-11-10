@@ -12,6 +12,34 @@ The solver's code needs to be really tiny. Really reaaaaaallly tiny. Like freaki
 Hint: Perhaps its time to leave the comfort of the Solidity compiler momentarily, and build this one by hand O_o. That's right: Raw EVM bytecode.
 
 Good luck!
+
 ---
 
 Notes:
+Raw EVM bytecodes
+Bytecode is executed as a number of opcodes
+Two opcodes
+- Runtime opcodes
+  - Logic of contract 
+- Initialization opcodes
+  - Create contract
+  - Stores runtime opcode
+
+Runtime is max 10 opcodes
+
+Need to return number `42`
+
+Flow of the runtime opcode
+1. Push value on the stack
+2. Store it on MEM
+3. Return the value
+
+`PUSH1`
+`MSTORE`
+`RETURN`
+
+Initialization opcode
+
+Copy runtime opcode
+`CODECOPY` - three args (position, size, destination)
+`RETURN` 
