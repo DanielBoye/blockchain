@@ -43,3 +43,5 @@ for (uint i = 0; i < partCount; i++) {
 ```
 
 So we need to extract the 65-byte part for each part of the domain. Then from the transfer codes we got, we can concatenate them together and make a transfer code that will fit with the flag domain.
+
+The last step is to get the flag with sending a POST request to `/send-flag`
