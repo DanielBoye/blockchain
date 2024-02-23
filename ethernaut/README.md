@@ -26,11 +26,11 @@ Challenges:
 - [x] Naught Coin
 - [x] Preservation
 - [x] Recovery
-- [ ] MagicNumber
-- [ ] Alien Codex
-- [ ] Denial
-- [ ] Shop
-- [ ] Dex
+- [x] MagicNumber
+- [x] Alien Codex
+- [x] Denial
+- [x] Shop
+- [x] Dex
 - [ ] Dex Two
 - [ ] Puzzle Wallet
 - [ ] Motorbike
