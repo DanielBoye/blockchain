@@ -18,7 +18,6 @@ contract Solve {
 interface IDex {
     function token1() external view returns (address);
     function token2() external view returns (address);
-    function getSwapPrice(address from, address to, uint256 amount) external view returns(uint);
     function swap(address from, address to, uint256 amount) external;
 }
 
