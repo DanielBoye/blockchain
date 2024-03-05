@@ -13,7 +13,7 @@ interface IEngine {
 
 // Get implementation
 // await web3.eth.getStorageAt(contract.address, '0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc')
-// 0x0000000000000000000000002c61fbf57208d2b3234d1383d84388a77c251bc5
+// 0x000000000000000000000000e54bb5918625cd8338c1f770684bc09c7c864a01
 
 contract Hack {
     function pwn(IEngine target) external {
