@@ -2,6 +2,16 @@
 
 The solution is a reentrancy vulnerability in the `sell()` function
 
+```solidity
+function sell(uint256 amount) public
+    {
+        require(balances[msg.sender] >= amount, "You can not sell this much as you are poor af");
+        uint256 new_balance = balances[msg.sender] - amount;
+        (msg.sender).call{value: amount}("");
+        balances[msg.sender] = new_balance;
+    }
+```
+
 We can reenter it with:
 ```solidity
 function attack() external payable
@@ -20,3 +30,4 @@ function attack() external payable
         }
     }
 ```
+See Solve.sol for the full solution
