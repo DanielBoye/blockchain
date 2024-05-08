@@ -31,9 +31,9 @@ Challenges:
 - [x] Denial
 - [x] Shop
 - [x] Dex
-- [ ] Dex Two
-- [ ] Puzzle Wallet
-- [ ] Motorbike
+- [x] Dex Two
+- [x] Puzzle Wallet
+- [x] Motorbike
 - [ ] DoubleEntryPoint
 - [ ] Good Samaritan
 - [ ] Gatekeeper Three
